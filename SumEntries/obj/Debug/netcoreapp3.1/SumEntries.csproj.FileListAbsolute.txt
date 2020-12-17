@@ -1,0 +1,13 @@
+D:\Projetos Treino\AdventOfCode\2020\December\1\adventofcode-december-1-find-sum-entries\SumEntries\obj\Debug\netcoreapp3.1\SumEntries.csprojAssemblyReference.cache
+D:\Projetos Treino\AdventOfCode\2020\December\1\adventofcode-december-1-find-sum-entries\SumEntries\obj\Debug\netcoreapp3.1\SumEntries.AssemblyInfoInputs.cache
+D:\Projetos Treino\AdventOfCode\2020\December\1\adventofcode-december-1-find-sum-entries\SumEntries\obj\Debug\netcoreapp3.1\SumEntries.AssemblyInfo.cs
+D:\Projetos Treino\AdventOfCode\2020\December\1\adventofcode-december-1-find-sum-entries\SumEntries\obj\Debug\netcoreapp3.1\SumEntries.csproj.CoreCompileInputs.cache
+D:\Projetos Treino\AdventOfCode\2020\December\1\adventofcode-december-1-find-sum-entries\SumEntries\bin\Debug\netcoreapp3.1\SumEntries.exe
+D:\Projetos Treino\AdventOfCode\2020\December\1\adventofcode-december-1-find-sum-entries\SumEntries\bin\Debug\netcoreapp3.1\SumEntries.deps.json
+D:\Projetos Treino\AdventOfCode\2020\December\1\adventofcode-december-1-find-sum-entries\SumEntries\bin\Debug\netcoreapp3.1\SumEntries.runtimeconfig.json
+D:\Projetos Treino\AdventOfCode\2020\December\1\adventofcode-december-1-find-sum-entries\SumEntries\bin\Debug\netcoreapp3.1\SumEntries.runtimeconfig.dev.json
+D:\Projetos Treino\AdventOfCode\2020\December\1\adventofcode-december-1-find-sum-entries\SumEntries\bin\Debug\netcoreapp3.1\SumEntries.dll
+D:\Projetos Treino\AdventOfCode\2020\December\1\adventofcode-december-1-find-sum-entries\SumEntries\bin\Debug\netcoreapp3.1\SumEntries.pdb
+D:\Projetos Treino\AdventOfCode\2020\December\1\adventofcode-december-1-find-sum-entries\SumEntries\obj\Debug\netcoreapp3.1\SumEntries.dll
+D:\Projetos Treino\AdventOfCode\2020\December\1\adventofcode-december-1-find-sum-entries\SumEntries\obj\Debug\netcoreapp3.1\SumEntries.pdb
+D:\Projetos Treino\AdventOfCode\2020\December\1\adventofcode-december-1-find-sum-entries\SumEntries\obj\Debug\netcoreapp3.1\SumEntries.genruntimeconfig.cache
