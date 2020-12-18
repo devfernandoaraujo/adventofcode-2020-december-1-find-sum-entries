@@ -8,51 +8,70 @@ namespace SumEntries
     {
         public List<int> input = null;
         int expectedValue;
-        int remainder;
-        int number;
-        int numOfIterations;
-        public CalculateEntries(int expectedValue, int numOfIterations)
+
+        /// <summary>
+        /// Class Constructor
+        /// </summary>
+        /// <param name="expectedValue">Integer value that must be found when sum 2 or more entries</param>
+        public CalculateEntries(int expectedValue)
         {
             input = Puzzle.GetPuzzleInput();
             this.expectedValue = expectedValue;
-            this.remainder = 0;
-            this.number = 0;
-            this.numOfIterations = numOfIterations;
+
         }
 
-        public void FindNumbers()
+        /// <summary>
+        /// Find the number that summed is equal to a given integer
+        /// </summary>
+        /// <param name="isThreeEntries">Specify if the sum is referent of 3 numbers</param>
+        /// <returns>The product of 2 or more numbers</returns>
+        public int FindNumbers(bool isThreeEntries)
         {
 
+            if (isThreeEntries)
+                return this.FindNumbersThreeEntries();
+
+            int firstNumber = 0;
+            int secondNumber = 0;
             foreach (int v in this.input)
             {
-                this.remainder = this.expectedValue - v;
-                if (this.input.Where(x => x == remainder).FirstOrDefault() != 0)
+                firstNumber = this.expectedValue - v;
+                if (this.input.Where(x => x == (this.expectedValue - firstNumber)).FirstOrDefault() != 0)
                 {
-                    this.number = v;
+                    secondNumber = v;
                     break;
                 }
             }
+
+            return Product(new int[] { firstNumber, secondNumber });
         }
 
-        public void FindNumbers(List<int> list, int iteration = 1)
+        private int FindNumbersThreeEntries()
         {
-            if (iteration > this.numOfIterations)
-                return;
-
-            foreach (int v in list)
+            int firstNumber = 0;
+            int secondNumber = 0;
+            int ThirdNumber = 0;
+            foreach (int v in this.input)
             {
-                this.remainder = this.expectedValue - v;
-                if (this.input.Where(x => x == remainder).FirstOrDefault() != 0)
+                firstNumber = v;
+                foreach (int n in this.input.Where(x => x < v).ToList())
                 {
-                    this.number = v;
-                    break;
+                    secondNumber = n;
+                    if (this.input.Where(x => x == (this.expectedValue - (v + n))).FirstOrDefault() != 0)
+                    {
+                        ThirdNumber = this.input.Where(x => x == (this.expectedValue - (v + n))).FirstOrDefault();
+                        return this.Product(new int[] { firstNumber, secondNumber, ThirdNumber });
+                    }
                 }
             }
+
+            return 0;
+
         }
 
-        public int MultiplyValues()
+        private int Product(int[] numbers)
         {
-            return this.number * this.remainder;
+            return numbers.Aggregate(1, (x, y) => x * y);
         }
     }
 }

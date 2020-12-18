@@ -7,9 +7,10 @@ namespace SumEntries
         static void Main(string[] args)
         {
             CalculateEntries _calculateEntries = new CalculateEntries(2020);
-            _calculateEntries.FindNumbers();
+            _calculateEntries.FindNumbers(false);
 
-            Console.WriteLine("The number is: {0}", _calculateEntries.MultiplyValues());
+            Console.WriteLine("The multiplycation of the 2 numbers is: {0}", _calculateEntries.FindNumbers(false));
+            Console.WriteLine("The multiplycation of the 3 numbers is: {0}", _calculateEntries.FindNumbers(true));
 
             Console.ReadKey();
         }

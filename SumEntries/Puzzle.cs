@@ -5,8 +5,18 @@ using System.Collections.Immutable;
 
 namespace SumEntries
 {
+    /// <summary>
+    /// Class with Entries  for the challenge
+    /// </summary>
+
     internal static class Puzzle
     {
+        /// <summary>
+        /// Puzzle reference numbers 
+        /// </summary>
+        /// <returns>
+        /// List of integers
+        /// </returns>
         internal static List<int> GetPuzzleInput()
         {
             List<int> lst = new List<int>(){
@@ -216,4 +226,3 @@ namespace SumEntries
         }
     }
 }
-
